@@ -7,7 +7,7 @@ spark-ecommerce-analytics/
 ├── scripts/
 │   ├── generate_orders.py      # 模拟数据生成 
 │   └── order_etl_analysis.py   # 核心分析 (商品种类/支付方式/销售额)
-├── data/                       # 存放运行脚本生成的原始模拟数据 
+├── data/                       # 存放运行脚本生成的原始模拟数据 (data 文件夹初始为空，仅包含.gitkeep 文件以保留目录结构)
 ├── output/                     # 存放分析结果 (运行脚本后自动生成该文件夹及分析结果)
 ├── .gitignore                  # Git 版本控制忽略规则
 ├── requirements.txt            # 所需依赖包列表
