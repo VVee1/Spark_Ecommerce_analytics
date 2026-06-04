@@ -73,10 +73,12 @@ Java 8+
 
 3.**如何查看output中的分析结果**：由于 Spark 采用分布式并行计算机制，默认情况下会将输出结果切分为多个分区文件（即 part-00000、part-00001... 格式），而不是生成单个 CSV 文件。这是正常现象，并非报错。
  output目录结构说明：
+ ```text
  output/
  ├── category_sales/     # 商品品类营收排行结果
  ├── payment_stats/      # 支付方式订单统计结果
  └── daily_revenue/      # 每日营收趋势结果
+```
  每个文件夹内包含若干 part-xxxxx.csv 文件和一个 _SUCCESS 标记文件。
  
  如何进行查看？
