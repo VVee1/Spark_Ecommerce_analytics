@@ -1,5 +1,5 @@
 #Spark E-commerce Analytics (电商订单数据分析)
-本项目基于PySpark实现电商订单全链路ETL开发，自主生成10万条仿真订单，完成数据清洗与多维度营收指标统计，落地结构化报表。
+##本项目基于PySpark实现电商订单全链路ETL开发，自主生成10万条仿真订单，完成数据清洗与多维度营收指标统计，落地结构化报表。
 
 ##项目结构
 ```text
@@ -27,11 +27,11 @@ pip install -r requirements.txt
 ##快速运行
 1.生成数据:
 ```text
-python scripts/generate_orders.py    #会在 data/ 目录下生成 10 万条模拟订单的csv文件
+python scripts/generate_orders.py    #会在 data/目录下生成 10 万条模拟订单的csv文件
 ```
 2.执行分析:
 ```text
-python scripts/order_etl_analysis.py   #分析结果会输出到 output/ 目录\
+python scripts/order_etl_analysis.py   #分析结果会输出到 output/目录
 ```
 
 ##核心分析指标
