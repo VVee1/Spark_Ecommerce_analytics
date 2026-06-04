@@ -14,14 +14,25 @@ spark-ecommerce-analytics/
 └── README.md                   # 项目说明文档
 ```
 ##环境依赖
+```text
 Python 3.7+
 Apache Spark 3.x
 Java 8+
-安装依赖：pip install -r requirements.txt
+```
+安装依赖：
+```text
+pip install -r requirements.txt
+```
 
 ##快速运行
-1.生成数据:python scripts/generate_orders.py    #会在 data/ 目录下生成 10 万条模拟订单的csv文件
-2.执行分析:python scripts/order_etl_analysis.py   #分析结果会输出到 output/ 目录\
+1.生成数据:
+```text
+python scripts/generate_orders.py    #会在 data/ 目录下生成 10 万条模拟订单的csv文件
+```
+2.执行分析:
+```text
+python scripts/order_etl_analysis.py   #分析结果会输出到 output/ 目录\
+```
 
 ##核心分析指标
 本项目通过 PySpark 对电商订单数据进行深度挖掘，主要产出以下三个维度的业务洞察：
@@ -84,7 +95,9 @@ Java 8+
  如何进行查看？
  方式 A：使用命令行合并（推荐）
  如果你熟悉终端命令，可以直接将所有分片合并为一个完整的 CSV 文件：
+ ```text
  cat output/category_sales/part-*.csv > category_sales.csv         #以查看“品类排行”为例
+ ``` 
  
  方式 B：直接打开任意分片
  如果数据量较小（如本项目的 10 万条模拟数据），你可以直接用 Excel 或文本编辑器打开任意一个 part-00000-....csv 文件查看内容。虽然数据被分散了，但表头和内容格式是完整的。
