@@ -16,6 +16,7 @@ spark-ecommerce-analytics/
 ```
 ##环境依赖
 ```text
+操作系统: Linux (Red Hat Enterprise Linux / CentOS 7+) [推荐]
 Python 3.7+
 Apache Spark 3.x
 Java 8+
